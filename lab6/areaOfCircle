@@ -1,0 +1,24 @@
+//Write a program to create circle class with area function to find area of circle.
+
+
+
+import java.util.*;
+class Circle{
+	double r;
+	public void areaOfCircle(double r){
+		this.r=r;
+		System.out.print(Math.PI*this.r*this.r);
+	}
+}
+
+
+public class areaOfCircle{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		Circle c1 = new Circle();
+		System.out.print("Enter radious");
+		double r=sc.nextDouble();
+		c1.areaOfCircle(r);
+
+	}
+}
